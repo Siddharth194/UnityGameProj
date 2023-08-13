@@ -19,7 +19,7 @@ public class AddGunToInventory : MonoBehaviour
         {
             ID += 1;
             Debug.Log("Gun added to inventory.");
-            Debug.Log(InventoryScript.instance.ListofItems.Count);
+            //Debug.Log(InventoryScript.instance.ListofItems.Count);
             //Destroy(gameObject);
         }
         else
