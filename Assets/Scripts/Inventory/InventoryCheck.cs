@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class AddGunToInventory : MonoBehaviour
 {
-    public int ID = 0;
+    public int ID = 1;
     public Sprite mspistol;
     public Sprite Bandage;
     public static AddGunToInventory instance;
@@ -19,19 +19,19 @@ public class AddGunToInventory : MonoBehaviour
             //Destroy(gameObject);
         }
 
-        int ID = 0;
+        int ID = 1;
     }
 
     public Item CreateGun()
     {
-        Item gunItem = new Item("Makeshift Pistol", ID, ItemType.Weapon, mspistol, 0, 1, null, 1);
+        Item gunItem = new Item("Makeshift Pistol", ID, ItemType.Weapon, mspistol, 0, 1, 1, null, 1);
        
         return gunItem;
     }
 
     public Item CreateBandage()
     {
-        Item bdgItem = new Item("Bandage", ID, ItemType.Consumable, Bandage, 0, -1, null, 1);
+        Item bdgItem = new Item("Bandage", ID, ItemType.Consumable, Bandage, 0, -1, -1, null, 1);
 
         return bdgItem;
     }

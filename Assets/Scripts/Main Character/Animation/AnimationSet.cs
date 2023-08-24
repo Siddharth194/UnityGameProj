@@ -22,6 +22,6 @@ public class AnimationSet : MonoBehaviour
             cwp = 1 - cwp;
         }
 
-        animator.SetFloat("weapon",cwp);
+        //animator.SetFloat("weapon",cwp);
     }
 }

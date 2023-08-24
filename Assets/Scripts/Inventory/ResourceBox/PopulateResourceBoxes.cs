@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class PopulateResourceBoxes : MonoBehaviour
 {
-    public Sprite mspistol;
-    int ID = 0;
-    
+    public Sprite mspistol;    
     void Start()
     {
         Item gunitem = AddGunToInventory.instance.CreateGun(); //new Item("Makeshift Pistol", ID, ItemType.Weapon, mspistol, 0, 1, null);

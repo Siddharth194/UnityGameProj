@@ -22,20 +22,18 @@ public class HandSpriteSet : MonoBehaviour
         SpriteResolver LSR = LeftHand.GetComponent<SpriteResolver>();
         SpriteResolver RSR = RightHand.GetComponent<SpriteResolver>();
 
-        //attacking = anim.GetBool("attack");
-
-        if (Attributes.instance.weapon == 0)
+        if (Attributes.instance.weapon.weaponID == 0)
         {
             LSR.SetCategoryAndLabel("Left Hand", "Empty Left");
             RSR.SetCategoryAndLabel("Right Hand", "Empty Right");
         }
-        else if (Attributes.instance.weapon == 1)
+        else if (Attributes.instance.weapon.weaponID == 1)
         {
             LSR.SetCategoryAndLabel("Left Hand", "Zip Left");
             RSR.SetCategoryAndLabel("Right Hand", "Zipgun Right");
         }
 
         //if (Input.GetKeyDown(KeyCode.E)) weapon = 1 - weapon;
-        anim.SetFloat("weapon",Attributes.instance.weapon);
+        //anim.SetFloat("weapon",Attributes.instance.weapon);
     }
 }

@@ -39,7 +39,7 @@ public class EquipAndUse : MonoBehaviour
     void ClickFunc(int itemIndex)
     {
         currindex = itemIndex;
-        Debug.Log(itemIndex);
+        //Debug.Log(itemIndex);
         EButton.gameObject.SetActive(true);
         ItemInfo.gameObject.SetActive(true);
 
@@ -56,8 +56,7 @@ public class EquipAndUse : MonoBehaviour
     {
         if (InventoryScript.instance.ListofItems[index].itemType == ItemType.Weapon)
         {
-            Attributes.instance.weapon = InventoryScript.instance.ListofItems[index].weaponID;
-            Debug.Log(Attributes.instance.weapon);
+            Attributes.instance.weapon = InventoryScript.instance.ListofItems[index];
         }
     }
 }
