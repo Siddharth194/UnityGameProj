@@ -29,7 +29,7 @@ public class HealthBar : MonoBehaviour
         if (healthText != null)
         {
             float healthPercentage = (health / maxhealth) * 100f;
-            healthText.text = "Health: " + healthPercentage.ToString("F1") + "%"; // Update text with health percentage
+            healthText.text = healthPercentage.ToString("F1") + "%"; // Update text with health percentage
         }
     }
 

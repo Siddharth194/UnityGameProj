@@ -58,6 +58,12 @@ public class EquipAndUse : MonoBehaviour
         {
             Attributes.instance.weapon = InventoryScript.instance.ListofItems[index];
         }
+        else
+        {
+            Attributes.instance.health += InventoryScript.instance.ListofItems[index].damage;
+            if (Attributes.instance.health >= Attributes.instance.maxhealth) Attributes.instance.health = Attributes.instance.maxhealth;
+            InventoryScript.instance.ListofItems.RemoveAt(index);
+        }
     }
 }
 

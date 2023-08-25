@@ -105,10 +105,6 @@ public class ClickAndHoldTrigger : MonoBehaviour
                     x.gameObject.GetComponent<EnemyAttributes>().damage(Attributes.instance.weapon.damage);
                 }
             }
-            else
-            {
-                Debug.LogWarning("Mouse collided with the enemy");
-            }
         }
     }
     else if (Attributes.instance.weaponnum == 1)
@@ -116,6 +112,23 @@ public class ClickAndHoldTrigger : MonoBehaviour
         anim.SetBool("attack", true);
         anim.Play("Shooting");
         StartCoroutine(WeaponFlash(5));
+
+        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 mousePos2D = new Vector2(mousePos.x, mousePos.y);
+
+        RaycastHit2D hit = Physics2D.Raycast(mousePos2D, Vector2.zero);
+
+        if (hit.collider != null && hit.collider.CompareTag("Enemy"))
+        {
+            Collider2D x = hit.collider;
+            float distance = Vector3.Distance(hit.collider.GetComponent<Transform>().position, transform.position);
+
+            if (Attributes.instance.weapon != null && Attributes.instance.weapon.weapontype == 1)
+            {
+                    Debug.Log("Mouse collided with the enemy: " + hit.collider.gameObject.name);
+                    x.gameObject.GetComponent<EnemyAttributes>().damage(Attributes.instance.weapon.damage);
+            }
+        }
     }
     else
     {

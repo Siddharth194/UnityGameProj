@@ -22,6 +22,6 @@ public class EnemyAttributes : MonoBehaviour
     }
     void Update()
     {
-        if (health <= 0) Destroy(gameObject);
+        if (health <= 0) Destroy(transform.parent.gameObject);
     }
 }

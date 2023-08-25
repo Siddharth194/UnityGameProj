@@ -24,14 +24,14 @@ public class AddGunToInventory : MonoBehaviour
 
     public Item CreateGun()
     {
-        Item gunItem = new Item("Makeshift Pistol", ID, ItemType.Weapon, mspistol, 0, 1, 1, null, 1);
+        Item gunItem = new Item("Makeshift Pistol", ID, ItemType.Weapon, mspistol, 34, 1, 1, null, 1);
        
         return gunItem;
     }
 
     public Item CreateBandage()
     {
-        Item bdgItem = new Item("Bandage", ID, ItemType.Consumable, Bandage, 0, -1, -1, null, 1);
+        Item bdgItem = new Item("Bandage", ID, ItemType.Consumable, Bandage, 25, -1, -1, null, 1);
 
         return bdgItem;
     }

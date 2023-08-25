@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Attributes : MonoBehaviour
 {
-    public float health = 100;
+    public float health;
     public float maxhealth = 100;
     public int kills = 0;
     public int level = 0;
@@ -25,6 +25,9 @@ public class Attributes : MonoBehaviour
 
     void Update()
     {
+        if (health <= 0)
+        Destroy(gameObject);
+
         if (weapon == null)
         {
             weaponnum = 0;
