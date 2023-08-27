@@ -12,7 +12,7 @@ public class CountdownTimer : MonoBehaviour
     public Transform Enemy;
 
     private bool flag = false;
-
+    private bool newwave = false;
     private void Start()
     {
         remainingTime = totalTime;
@@ -25,19 +25,30 @@ public class CountdownTimer : MonoBehaviour
             remainingTime -= Time.deltaTime;
             UpdateTimerText();
         }
-        else if (remainingTime == 0)
+
+        else if (remainingTime <= 0)
         {
             if (!flag)
             {
                 Debug.Log("A");
                 flag = true;
                 Enemy.GetComponent<EnemySpawn>().PickRandomElements(wavenumber*8);
+                newwave = true;
             }
         }
 
         if (remainingTime < 0)
         {
             remainingTime = 0;
+        }
+        Debug.Log(remainingTime);
+
+        if (Enemy.childCount == 0 && remainingTime <= 0 && newwave == true && wavenumber < 5)
+        {
+            flag = false;
+            remainingTime = 10;
+            wavenumber += 1;
+            newwave = false;
         }
     }
 

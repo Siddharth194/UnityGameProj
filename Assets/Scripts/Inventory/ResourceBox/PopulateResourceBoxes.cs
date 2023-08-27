@@ -23,7 +23,7 @@ public class PopulateResourceBoxes : MonoBehaviour
                Item impknifeitem = new Item("Improvised Knife", AddGunToInventory.instance.ID, ItemType.Weapon, impknife, 25, 3, 0, null, 1);
                CreateResourceBoxes.spawnedPrefabs[i].GetComponent<ResourceBox>().ListofItems.Add(impknifeitem);
             }
-            if (Random.value < 0.2)
+            if (Random.value < 0.25)
             {
                Item knifeitem = new Item("Battle Knife", AddGunToInventory.instance.ID, ItemType.Weapon, knife, 50, 2, 0, null, 1);
                CreateResourceBoxes.spawnedPrefabs[i].GetComponent<ResourceBox>().ListofItems.Add(knifeitem);
@@ -44,7 +44,7 @@ public class PopulateResourceBoxes : MonoBehaviour
 
             if (Random.value < 0.15)
             {
-                Item medKitItem = new Item("AK-47", AddGunToInventory.instance.ID, ItemType.Weapon, aksprite, 25, 5, 1, null, 1);
+                Item medKitItem = new Item("AK-47", AddGunToInventory.instance.ID, ItemType.Weapon, aksprite, 50, 5, 1, null, 1);
                 CreateResourceBoxes.spawnedPrefabs[i].GetComponent<ResourceBox>().ListofItems.Add(medKitItem);
             }
 

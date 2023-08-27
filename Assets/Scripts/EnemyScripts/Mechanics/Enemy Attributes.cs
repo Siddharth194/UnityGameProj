@@ -8,7 +8,8 @@ public class EnemyAttributes : MonoBehaviour
     public float maxhealth = 100;
     public static EnemyAttributes instance;
     public Animator anim;
-
+    public bool dead = false;
+    public GameObject prefabToSpawn, parent;
     void Start()
     {
         instance = this;
@@ -22,6 +23,12 @@ public class EnemyAttributes : MonoBehaviour
     }
     void Update()
     {
-        if (health <= 0) Destroy(transform.parent.gameObject);
+        if (health <= 0 && dead == false) 
+        {
+            anim.Play("death");
+            Instantiate(prefabToSpawn, transform.position, Quaternion.identity);
+            Destroy(transform.parent.gameObject);
+            dead = true;
+        }
     }
 }

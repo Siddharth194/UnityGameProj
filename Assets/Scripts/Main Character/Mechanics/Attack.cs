@@ -12,7 +12,7 @@ public class ClickAndHoldTrigger : MonoBehaviour
     private Transform childTransform;
     public Transform Enemies;
     private bool canClick = true;
-    public float fireInterval = 0.1f;
+    public float fireInterval = 0.0002f;
     private float lastFireTime = 0f;
     public Transform flashsprite;
 
@@ -151,6 +151,7 @@ public class ClickAndHoldTrigger : MonoBehaviour
                 //flashsprite.position = new Vector3(2.725f, 1.614f, 0f);
                 if (Time.time - lastFireTime >= fireInterval)
                 {
+                    Debug.Log("A");
                     Fire();
                     lastFireTime = Time.time;
                 }
@@ -191,7 +192,7 @@ public class ClickAndHoldTrigger : MonoBehaviour
             }
         }
 
-        StartCoroutine(WeaponFlash(5));
+        StartCoroutine(WeaponFlash1(3));
     }
 
 
@@ -212,6 +213,17 @@ public class ClickAndHoldTrigger : MonoBehaviour
     }
 
     private IEnumerator WeaponFlash(int framecount)
+    {
+        childTransform.gameObject.SetActive(true);
+        while (framecount > 0)
+        {
+            yield return null;
+            framecount--;
+        }
+        childTransform.gameObject.SetActive(false);
+    }
+
+    private IEnumerator WeaponFlash1(int framecount)
     {
         childTransform.gameObject.SetActive(true);
         while (framecount > 0)

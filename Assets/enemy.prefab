@@ -135,6 +135,10 @@ MonoBehaviour:
   health: 100
   maxhealth: 100
   anim: {fileID: 5604942333370889651}
+  dead: 0
+  prefabToSpawn: {fileID: 0}
+  parent: {fileID: 0}
+  parentTransform: {fileID: 0}
 --- !u!1001 &6902876048422911634
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -143,6 +147,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4995823366480657916}
     m_Modifications:
+    - target: {fileID: -6407635107705313668, guid: 7b96c3c804c48714eb637a2804e2c028, type: 3}
+      propertyPath: parent
+      value: 
+      objectReference: {fileID: 5201323234618802722}
+    - target: {fileID: -6407635107705313668, guid: 7b96c3c804c48714eb637a2804e2c028, type: 3}
+      propertyPath: parentTransform
+      value: 
+      objectReference: {fileID: 4995823366480657916}
     - target: {fileID: 1721851555671194800, guid: 7b96c3c804c48714eb637a2804e2c028, type: 3}
       propertyPath: m_Name
       value: skeleton-move_0_0
@@ -211,6 +223,11 @@ PrefabInstance:
 --- !u!4 &1352348943303852486 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5552783324454125396, guid: 7b96c3c804c48714eb637a2804e2c028, type: 3}
+  m_PrefabInstance: {fileID: 6902876048422911634}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5201323234618802722 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1721851555671194800, guid: 7b96c3c804c48714eb637a2804e2c028, type: 3}
   m_PrefabInstance: {fileID: 6902876048422911634}
   m_PrefabAsset: {fileID: 0}
 --- !u!95 &5604942333370889651 stripped
