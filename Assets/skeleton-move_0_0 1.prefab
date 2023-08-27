@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: -6407635107705313668}
   m_Layer: 0
   m_Name: skeleton-move_0_0 1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -186,6 +186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ece7911e0d50d148ac3fa372794a592, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 1297934351414217505}
 --- !u!114 &-6407635107705313668
 MonoBehaviour:
   m_ObjectHideFlags: 0

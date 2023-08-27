@@ -38,8 +38,23 @@ MonoBehaviour:
       m_Sprite: {fileID: -7356232534370788144, guid: f6c384ebe165e1a46ae453e492ef2e59, type: 3}
       m_FromMain: 0
       m_SpriteOverride: {fileID: -7356232534370788144, guid: f6c384ebe165e1a46ae453e492ef2e59, type: 3}
+    - m_Name: Knife Right
+      m_Hash: 445599294
+      m_Sprite: {fileID: -5128743696337760984, guid: 93aff3482b251974abc34be554cdcac9, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -5128743696337760984, guid: 93aff3482b251974abc34be554cdcac9, type: 3}
+    - m_Name: Glock Right
+      m_Hash: 1067778167
+      m_Sprite: {fileID: 1007810608723003879, guid: 8a3cdf60eed5d3049a2330d4076db8e4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1007810608723003879, guid: 8a3cdf60eed5d3049a2330d4076db8e4, type: 3}
+    - m_Name: AK Right
+      m_Hash: 849122466
+      m_Sprite: {fileID: -2680565017088049448, guid: 29767d9f25444914f90fe34bc25c83c8, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2680565017088049448, guid: 29767d9f25444914f90fe34bc25c83c8, type: 3}
     m_FromMain: 0
-    m_EntryOverrideCount: 2
+    m_EntryOverrideCount: 5
   - m_Name: Right Arm
     m_Hash: 747450821
     m_CategoryList: []
@@ -112,5 +127,5 @@ MonoBehaviour:
     m_FromMain: 0
     m_EntryOverrideCount: 1
   m_PrimaryLibraryGUID: 
-  m_ModificationHash: 638276134613478629
+  m_ModificationHash: 638286846339789362
   m_Version: 1

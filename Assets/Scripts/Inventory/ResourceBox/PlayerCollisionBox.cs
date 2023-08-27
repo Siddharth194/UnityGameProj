@@ -6,7 +6,7 @@ public class PlayerCollisionBox: MonoBehaviour
     GameObject PrimaryEventSystem;
     public GameObject Panel;
     public Collider2D triggerColliderToCheckAgainst;
-
+    public GameObject SecondaryEventSystem;
     bool active = false;
 
     void Start()
@@ -49,11 +49,13 @@ public class PlayerCollisionBox: MonoBehaviour
         {
             active = true;
             Panel.SetActive(true);
+            SecondaryEventSystem.SetActive(true);
         }
         else if (active == true)
         {
             active = false;
             Panel.SetActive(false);
+            SecondaryEventSystem.SetActive(false);
         }
     }
 }

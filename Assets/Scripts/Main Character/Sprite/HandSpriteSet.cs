@@ -6,7 +6,6 @@ using UnityEngine.U2D.Animation;
 public class HandSpriteSet : MonoBehaviour
 {
     private bool attacking;
-    //public int weapon = 0;
     private Transform parentTransform;
     public Animator anim;
 
@@ -27,10 +26,20 @@ public class HandSpriteSet : MonoBehaviour
             LSR.SetCategoryAndLabel("Left Hand", "Empty Left");
             RSR.SetCategoryAndLabel("Right Hand", "Empty Right");
         }
-        else if (Attributes.instance.weapon.weaponID == 1)
+        else if (Attributes.instance.weapon.weaponID == 1 || Attributes.instance.weapon.weaponID == 4 || Attributes.instance.weapon.weaponID == 5)
         {
             LSR.SetCategoryAndLabel("Left Hand", "Zip Left");
-            RSR.SetCategoryAndLabel("Right Hand", "Zipgun Right");
+
+            if (Attributes.instance.weapon.weaponID == 1)
+                RSR.SetCategoryAndLabel("Right Hand", "Zipgun Right");
+            else if (Attributes.instance.weapon.weaponID == 4)
+                RSR.SetCategoryAndLabel("Right Hand", "Glock Right");
+            else RSR.SetCategoryAndLabel("Right Hand", "AK Right");
+        }
+        else if (Attributes.instance.weapon.weaponID == 2 || Attributes.instance.weapon.weaponID == 3)
+        {
+            LSR.SetCategoryAndLabel("Left Hand", "Empty Left");
+            RSR.SetCategoryAndLabel("Right Hand", "Knife Right");
         }
 
         //if (Input.GetKeyDown(KeyCode.E)) weapon = 1 - weapon;

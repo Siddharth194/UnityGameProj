@@ -19,7 +19,7 @@ public class Item
     public int weaponID;
     public int maxStackSize = 1;
     public int weapontype;
-    public int durability;
+    public float durability;
 
     public Item(string name, int id, ItemType type, Sprite icon,  int dmg, int wID, int wtype, GameObject prefab = null, int stackSize = 1)
     {

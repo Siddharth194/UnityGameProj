@@ -12,6 +12,7 @@ public class Attributes : MonoBehaviour
     public static Attributes instance;
     public Animator anim;
     public int weaponnum;
+    public int windex;
 
     void Start()
     {
@@ -42,5 +43,10 @@ public class Attributes : MonoBehaviour
         weaponnum = weapon.weaponID;
         anim.SetFloat("weapon",weapon.weaponID);
 
+        if (weapon.durability <= 0)
+        {
+            InventoryScript.instance.ListofItems.RemoveAt(windex);
+            weapon = null;
+        }
     }
 }

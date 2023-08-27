@@ -57,8 +57,9 @@ public class EquipAndUse : MonoBehaviour
         if (InventoryScript.instance.ListofItems[index].itemType == ItemType.Weapon)
         {
             Attributes.instance.weapon = InventoryScript.instance.ListofItems[index];
+            Attributes.instance.windex = index;
         }
-        else
+        else if (InventoryScript.instance.ListofItems[index].itemType == ItemType.Consumable)
         {
             Attributes.instance.health += InventoryScript.instance.ListofItems[index].damage;
             if (Attributes.instance.health >= Attributes.instance.maxhealth) Attributes.instance.health = Attributes.instance.maxhealth;

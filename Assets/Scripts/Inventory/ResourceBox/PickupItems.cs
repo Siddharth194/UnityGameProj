@@ -34,12 +34,12 @@ public class PickupItems : MonoBehaviour
                     closeButton.gameObject.SetActive(true);
                     imageComponent.sprite = newSprite;
 
-                    int capturedIndex = i; // Capture the current index for the lambda
+                    int capturedIndex = i;
                     Button cbClick = closeButton.GetComponent<Button>();
 
                     if (cbClick != null)
                     {
-                        cbClick.onClick.RemoveAllListeners(); // Clear previous listeners
+                        cbClick.onClick.RemoveAllListeners();
                         cbClick.onClick.AddListener(() => CloseClickFunc(capturedIndex));
                     }
                     else
