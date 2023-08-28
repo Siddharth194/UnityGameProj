@@ -4,14 +4,15 @@ Outbreak: A 2D Top-Down RPG-Style Survival game
 
 ## Table of Contents
 
-- [Introduction]
-- [Features]
-- [Installation]
-- [Controls]
-- [Gameplay]
-- [Screenshots]
-- [Credits]
-- [License]
+- Introduction
+- Features
+- Installation
+- Controls
+- Gameplay
+- External Utilities used
+- Credits
+- Challenges Faced
+- Future Scope
   
 ## Introduction
 
