@@ -76,5 +76,5 @@ The player spawns with no equipment in their inventory when the game begins. A 3
 2. Smoother animations for the firing of automatic weapons.
 3. More types of enemies (Bosses, ranged attacks, etc.)
 4. More attributes to the player (Experience, hunger, thirst, stamina etc.)
-
+5. Adding shadows for assets.
 
