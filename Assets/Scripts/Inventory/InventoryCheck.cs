@@ -11,11 +11,6 @@ public class AddGunToInventory : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            //DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            //Destroy(gameObject);
         }
 
         int ID = 1;

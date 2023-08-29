@@ -23,6 +23,7 @@ public class PlayerCollisionBox: MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
+        Panel.SetActive(false);
         canv.gameObject.SetActive(false);
         PrimaryEventSystem.SetActive(true);
     }
