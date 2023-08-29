@@ -51,9 +51,9 @@ The player spawns with no equipment in their inventory when the game begins. A 3
 
 ## Credits
 
-- Artwork and Sprites: 
-  Character Sprites:
+- Artwork and Sprites:
   
+  Character Sprites: 
   [Riley Gombart on OpenGameArt](https://opengameart.org/art-search-advanced?keys=riley+gombart&title=&field_art_tags_tid_op=and&field_art_tags_tid=&name=&field_art_type_tid%5B%5D=9&sort_by=count&sort_order=DESC&items_per_page=24&Collection=)
   
   Building Sprites: [CraftPix on Dribbble.com](https://dribbble.com/craftpix_net)
