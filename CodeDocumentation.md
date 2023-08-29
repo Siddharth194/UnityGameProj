@@ -13,3 +13,27 @@
 
 ##### Inventory Scripts:
 <ul> EnableInventory.cs: Enables and disables the inventory display when the user presses 'I'</ul>
+<ul> EquipAndUse.cs: Allows a player to equip/use an item (based on whether the item is a weapon or a consumable respectively) once the inventory is open. </ul>
+<ul> InventoryCheck.cs: Basically just a testing file containing functions to create items and add them to the inventory. Pretty much redundant after the inventory testing. </ul>
+<ul> InventoryScript.cs: Instantiates the inventory object from the InventoryScript class, which contains a list (the lis serves as the inventory, containing items) </ul>
+<ul> InventoryUpdate.cs: Handles the updation of the inventory, both the UI and the backend. It detects button clicks and applies action accordingly. </ul>
+<ul> ItemScriptInv.cs: Contains the definition of Item class, which contains necessary attributes for the Item (classifying it into a Consumable or a Weapon, the damage/HP healed, the range, durability etc) </ul>
+
+##### Resource Box Scripts:
+<ul> ResourceBox.cs: Contains the Resource Box class, which consists of the list that holds the items that would be present in the Resource Box</ul>
+<ul> CreateResourceBoxes.cs: Spawns the Resource Box prefab at 10 randomly selected locations from a list of 28 hardcoded locations. </ul>
+<ul> PickUpItems.cs: Allows the player to pick up items from the pick up menu of a resource box. </ul>
+<ul> PlayerCollisionBox.cs: Allows the player to see the Pick Up Menu if they press 'P' when near the resource box</ul>
+<ul> PopulateResourceBox.cs: Populates the existing resource boxes with random weapons and consumables.</ul>
+
+##### Enemy Scripts:
+
+<ul> Enemy Attributes.cs: Maintains the health of the enemy and some other parameters.</ul>
+<ul> Enemy Sprite Rotation: Manages the rotation of the sprite in the direction the player is. Also handles enemy attacks.</ul>
+<ul> Death.cs: Plays the death animation when the animation dies. </ul>
+<ul> Enemy Spawn.cs: Handles the spawning of enemies in random locations. </ul>
+
+##### Miscellaneous:
+
+<ul> TimerForWave.cs: Handles the timer before every wave, and calls the function in Enemy Spawn whenever a new wave has to begin. </ul>
+<ul> HealthBar.cs: Displays the player's current health. </ul>
