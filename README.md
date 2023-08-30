@@ -32,6 +32,8 @@ The game heavily draws from the Battle Royale format of games which focuses on s
 
 ## Installation
 
+Download 'my project final.exe' and run the file to play the game.
+
 ## Controls
 
 - Movement: WASD
