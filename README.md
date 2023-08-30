@@ -81,3 +81,7 @@ The player spawns with no equipment in their inventory when the game begins. A 3
 4. More attributes to the player (Experience, hunger, thirst, stamina etc.)
 5. Adding shadows for assets.
 
+## Other files:
+
+- [Implementation](https://github.com/Siddharth194/UnityGameProj/edit/main/Implementation.md)
+- [Code Documentation](https://github.com/Siddharth194/UnityGameProj/edit/main/CodeDocumentation.md)
